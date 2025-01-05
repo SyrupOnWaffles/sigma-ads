@@ -1,5 +1,6 @@
 <script>
     import {currentUser,pb} from "./pocketbase";
+    import { goto } from "$app/navigation";
     
     let username;
     let email;
@@ -26,18 +27,21 @@
     async function login(){
         try{
             await pb.collection('users').authWithPassword(username,password);
+            goto("/")
         }catch(err){
             errorMessage = err
         }
     }
 </script>
 
-<p>sign up to post a comment</p>
-<p>{errorMessage}</p>
-<form on:submit|preventDefault>
-<input class="form-control" placeholder="Username"type="text"bind:value={username}/>
-<input class="form-control" placeholder="Email"type="email"bind:value={email}/>
-<input class="form-control" placeholder="Password"type="password"bind:value={password}/>
-<input class="form-control" placeholder="Confirm Password"type="password"bind:value={passwordConfirm}/>
-<button class="btn btn-primary" on:click={signUp}>Sign Up</button>
-</form>
+<div class="p-3 col">
+    <h1><i class="bi bi-person-plus-fill"></i> Sign Up</h1>
+    <p>{errorMessage}</p>
+    <form on:submit|preventDefault>
+        <input class="form-control mb-2" placeholder="Username"type="text"bind:value={username}/>
+        <input class="form-control mb-2" placeholder="Email"type="email"bind:value={email}/>
+        <input class="form-control mb-2" placeholder="Password"type="password"bind:value={password}/>
+        <input class="form-control mb-2" placeholder="Confirm Password"type="password"bind:value={passwordConfirm}/>
+        <button class="btn btn-primary w-100" on:click={signUp}><i class="bi bi-person-plus-fill"></i> Sign Up</button>
+    </form>
+</div>

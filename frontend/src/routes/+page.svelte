@@ -17,11 +17,19 @@
 </script>
 
 <!-- <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/20MuVazoNMv6xjKPnRFOxG?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> -->
-<iframe src="http://127.0.0.1:8090/embed/ad/aiy50308pjcxun0"  width="50%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2nZPwKpV75BQpn9snGy2xG?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-{#if $currentUser}
+<!-- <iframe src="http://127.0.0.1:8090/embed/ad/aiy50308pjcxun0"  width="50%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> -->
+<!-- {#if $currentUser}
         <p>signed in as {$currentUser.username}</p>
         <Signout></Signout>
 {:else}
   <p>Not logged in. <a href="/login">login</a></p>
-{/if}
+{/if} -->
+<h1 class="display-1 text-center mb-4">Ads for the Indie Web</h1>
+
+<p class="mb-4">
+<span class="fs-2">Lorem ipsum dolor sit amet,</span> consectetur adipiscing elit. Suspendisse luctus, nibh nec blandit consequat, massa diam volutpat erat, sed cursus turpis neque aliquam sem. Morbi a velit massa. Vivamus vulputate ex a magna tristique, sit amet eleifend augue lacinia. Nunc vel felis ex. Suspendisse rhoncus malesuada ex non efficitur. Duis a tincidunt ipsum, mattis ullamcorper odio. Duis metus justo, dignissim sit amet nulla vel, dictum porttitor arcu. Donec at justo odio. Nam hendrerit nibh quis turpis sagittis, ut hendrerit dolor luctus. Aenean volutpat risus sed interdum egestas. Phasellus elit sem, auctor non magna nec, elementum tempus dolor. Duis tincidunt placerat ligula id elementum. Duis et magna vulputate, molestie tellus at, rhoncus mauris. Aliquam non accumsan urna, ac fringilla nulla. Proin finibus a est sit amet tempor.
+</p>
+<img class="img-fluid mb-4" src="https://picsum.photos/seed/picsum/1920/1080">
+<p class="mb-4">
+  Nulla feugiat mauris a ligula ultrices maximus. Maecenas pellentesque, elit vel sagittis rutrum, leo neque sollicitudin elit, ac semper nulla ex in ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris interdum urna quis mauris auctor, sed efficitur nisi condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque at tempor metus. Vestibulum lacus lectus, hendrerit a tortor quis, commodo gravida velit. Sed eget tortor sit amet ligula efficitur aliquam. Donec sed lacus felis.
+</p>
