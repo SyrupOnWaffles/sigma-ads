@@ -33,12 +33,12 @@
     }
 </script>
 
-<h1 class="text-4xl mb-4"><i class="bi bi-person-plus-fill"></i> Sign Up</h1>
+<h1 class="text-2xl font-bold mb-4 text-center">Sign Up</h1>
 <p class="text-error">{errorMessage}</p>
-<form on:submit|preventDefault>
-    <input autocomplete="Username" class="input input-bordered w-full mb-2" placeholder="Username"type="text"bind:value={username}/>
-    <input class="input input-bordered w-full mb-2" placeholder="Email"type="email"bind:value={email}/>
-    <input class="input input-bordered w-full mb-2" placeholder="Password"type="password"bind:value={password}/>
-    <input class="input input-bordered w-full mb-2" placeholder="Confirm Password"type="password"bind:value={passwordConfirm}/>
-    <button class="btn btn-primary w-full" on:click={signUp}><i class="bi bi-person-plus-fill"></i> Sign Up</button>
+<form on:submit|preventDefault method="POST">
+    <input type="text" name="username" autocomplete="username" class="input input-bordered w-full mb-2" placeholder="Username" bind:value={username}/>
+    <input type="email" name="email" autocomplete="" class="input input-bordered w-full mb-2" placeholder="Email" bind:value={email}/>
+    <input type="password" name="password1" autocomplete="new-password" class="input input-bordered w-full mb-2" placeholder="Password" bind:value={password}/>
+    <input type="password" name="password2" autocomplete="new-password" class="input input-bordered w-full mb-2" placeholder="Confirm Password" bind:value={passwordConfirm}/>
+    <button class="btn btn-neutral w-full" on:click={signUp}>Sign Up</button>
 </form>

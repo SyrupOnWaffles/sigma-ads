@@ -6,16 +6,16 @@
 </script>
 <Navbar></Navbar>
 <MediumLayout>
-  <div class="mt-32 flex flex-row">
-    <div class="basis-1/2">
-      <div class="max-w-sm mx-auto shadow-xl h-full rounded-lg p-8">
+  <div class="flex flex-col md:flex-row h-full">
+    <div class="md:w-1/2 text-center">
+      <div class="max-w-sm mx-auto my-auto rounded-lg p-8">
           <Login></Login>
       </div> 
-    </div> 
-    <div class="basis-1/2">
-      <div class="max-w-sm mx-auto shadow-xl h-full rounded-lg p-8">
+    </div>
+    <div class="md:w-1/2 text-center">
+      <div class="max-w-sm mx-auto my-auto rounded-lg p-8">
         <Signup></Signup>
       </div> 
-    </div> 
-  </div> 
+    </div>
+  </div>
 </MediumLayout>

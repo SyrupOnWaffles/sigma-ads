@@ -16,11 +16,11 @@
 
 </script>
 
-<h1 class="text-4xl mb-4"><i class="bi bi-envelope-fill"></i> Forgot Password</h1>
+<h1 class="text-2xl font-bold mb-4 text-center">Forgot Password</h1>
 <p class="text-success mb-2">{successMessage}</p>
 <p class="text-error mb-2">{errorMessage}</p>
 <form on:submit|preventDefault>
     <p></p>
-    <input class="input input-bordered w-full mb-2" placeholder="Email"type="email"bind:value={email}/>
-    <button class="btn btn-primary w-full" on:click={resetPassword}><i class="bi bi-envelope-fill"></i> Send</button>
+    <input autocomplete="email" class="input input-bordered w-full mb-2" placeholder="Email"type="email"bind:value={email}/>
+    <button class="btn btn-neutral w-full" on:click={resetPassword}>Send</button>
 </form>
