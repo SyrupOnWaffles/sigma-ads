@@ -4,7 +4,8 @@
     import "bootstrap-icons/font/bootstrap-icons.css";
 </script>
 
-<div class="navbar lg:px-16 bg-base-100">
+<header>
+  <div class="navbar lg:px-16 bg-base-100">
     <div class="navbar-start">
       <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -54,3 +55,4 @@
       {/if}
     </div>
   </div>
+</header>
